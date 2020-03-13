@@ -1,0 +1,9 @@
+echo '开始安装依赖'
+npm i
+echo '安装依赖完成，开始构建'
+npm run build
+echo '清理工作空间'
+npm run clean
+echo '工作空间清理完成'
+npm run copy
+echo '代码copy完成'

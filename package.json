@@ -1,0 +1,64 @@
+{
+  "name": "base-template",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve --mode local",
+    "build": "vue-cli-service build --mode production",
+    "build:sandbox": "vue-cli-service build --mode production sandbox",
+    "build:prod": "vue-cli-service build --mode production",
+    "dev": "vue-cli-service build --mode development",
+    "test": "vue-cli-service build --mode test",
+    "lint": "vue-cli-service lint",
+    "fix": "eslint --fix --ext .js,.vue src",
+    "start": "cross-env NODE_ENV=dev node start.js --env dev",
+    "start:test": "pm2 start ns.json --env test",
+    "start:sandbox": "pm2 start ns.json --env sandbox",
+    "start:production": "pm2 start ns.json --env production",
+    "mini": "gulp mini",
+    "clean": "gulp clean",
+    "copy": "gulp copy"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "dayjs": "^1.8.17",
+    "jquery": "^3.3.1",
+    "qs": "^6.9.1",
+    "vue": "^2.6.6",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@babel/runtime": "^7.7.4",
+    "@vue/cli-plugin-babel": "^3.5.0",
+    "@vue/cli-plugin-eslint": "^3.5.0",
+    "@vue/cli-service": "^3.5.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "babel-eslint": "^10.0.1",
+    "body-parse": "^0.1.0",
+    "cookie-parser": "^1.4.4",
+    "cross-env": "^6.0.3",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0-beta.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-js-encrypt": "^1.0.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-uglify": "^3.0.2",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
+    "log4js": "^6.1.0",
+    "style-resources-loader": "^1.2.1",
+    "vue-cli-plugin-style-resources-loader": "^0.1.3",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "buildInfo": {
+    "outPath": "ns-release",
+    "projectName": {
+      "common": "node-server",
+      "sandbox": "sx-node-server"
+    }
+  }
+}

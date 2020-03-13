@@ -1,0 +1,12 @@
+echo '开始安装依赖'
+npm i
+echo '安装依赖完成，开始构建'
+echo "安装pm2"
+npm i pm2 -g
+echo "删除PM2进程"
+pm2 delete node-server
+echo "启动项目(test/sandbox/production)"
+pm2 start ns.json --env production
+pm2 list
+echo "查看日志"
+pm2 logs

@@ -1,0 +1,25 @@
+[
+  {
+    "name": "node-server",
+    "script": "./start.js",
+    "cwd": "./",
+    "instances": 1,
+    "exec_mode" : "cluster_mode",
+    "pid_file": "/data/node-server/pm2/app.pid",
+    "error_file": "/data/node-server/pm2/app-err.log",
+    "out_file": "/data/node-server/pm2/app.log",
+    "log_date_format": "YYYY-MM-DD HH:mm:ss",
+    "env": {
+      "NODE_ENV": "production"
+    },
+    "env_test": {
+      "NODE_ENV": "test"
+    },
+    "env_sandbox": {
+      "NODE_ENV": "sandbox"
+    },
+    "env_production": {
+      "NODE_ENV": "production"
+    }
+  }
+]
