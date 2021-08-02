@@ -13,6 +13,9 @@ export default {
     console.log(this.$utils.browser)
     console.log('=====================')
     console.log(this.$exMethod)
+  },
+  errorCaptured(err, vm, info) {
+    return true
   }
 }
 </script>

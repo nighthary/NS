@@ -1,7 +1,9 @@
 const config = {
   common: {
     port: 3000,
-    logPath: '/data/nodeserver'
+    logPath: '/data/nodeserver',
+    // 是否开启错误日志采集
+    isOpenErrorCapture: true
   },
   dev: {
     baseURI: 'http://127.0.0.1/aa'

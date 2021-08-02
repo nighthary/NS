@@ -6,7 +6,11 @@
 </template>
 <script>
 export default {
-  name: 'index-index'
+  name: 'index-index',
+  created() {
+    console.log(aa.test)
+    console.error(222)
+  }
 }
 </script>
 <style lang="less" scoped>

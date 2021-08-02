@@ -37,7 +37,8 @@ module.exports = function (pageName) {
      window.dlydInfo={
       imgUrl: '${`${NS.config.imgUrl}`}',
       enURI: '${`${NS.config.enURI}`}',
-      projectName: '${`${NS.projectName}`}'
+      projectName: '${`${NS.projectName}`}',
+      isOpenErrorCapture: '${`${NS.config.isOpenErrorCapture}`}'
      }
     </script>
     </head>

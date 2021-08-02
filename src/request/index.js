@@ -3,7 +3,7 @@ import axios from 'axios'
 
 // axios配置
 const service = axios.create({
-  baseURL: process.env.VUE_APP_API, // axios 基础地址
+  baseURL: `/${process.env.PROJECT_NAME}/api/`, // axios 基础地址
   withCredentials: true
 })
 

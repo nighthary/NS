@@ -41,6 +41,9 @@ export default {
     goUI() {
       location.href = `/${process.env.PROJECT_NAME}/ui`
     }
+  },
+  created() {
+    console.log(test.mmm)
   }
 }
 </script>
